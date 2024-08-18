@@ -10,49 +10,63 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background: url('background.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
         }
 
         header {
-            background: url('header-bg.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 0;
             color: white;
             text-align: center;
         }
 
         header h1 {
-            font-size: 4em;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
 
         nav {
-            background-color: #333;
-            color: white;
-            padding: 15px;
+            background-color: #007BFF;
+            padding: 15px 0;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .section {
             padding: 50px 20px;
             text-align: center;
+            color: white;
         }
 
         .services, .projects, .about, .contact {
-            background-color: #f4f4f4;
+            background-color: rgba(0, 0, 0, 0.7);
             margin: 20px 0;
+            border-radius: 10px;
         }
 
         .services h2, .projects h2, .about h2, .contact h2 {
             margin-bottom: 30px;
-            color: #007BFF;
+            color: #FFD700;
         }
 
         footer {
@@ -60,23 +74,21 @@
             color: white;
             text-align: center;
             padding: 15px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
 
         .btn {
             display: inline-block;
             padding: 10px 20px;
             margin-top: 20px;
-            background-color: #007BFF;
-            color: white;
+            background-color: #FFD700;
+            color: black;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #FFA500;
         }
 
         .service-item, .project-item {
@@ -89,6 +101,10 @@
             height: auto;
             border-radius: 10px;
         }
+
+        .service-item p, .project-item p {
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
@@ -98,10 +114,10 @@
     </header>
     
     <nav>
-        <a href="#services">Послуги</a>
-        <a href="#projects">Проекти</a>
-        <a href="#about">Про нас</a>
-        <a href="#contact">Контакти</a>
+        <a href="services.html">Послуги</a>
+        <a href="projects.html">Проекти</a>
+        <a href="about.html">Про нас</a>
+        <a href="contact.html">Контакти</a>
     </nav>
     
     <section id="services" class="section services">
@@ -110,7 +126,7 @@
             <img src="facade.jpg" alt="Фасадні роботи">
             <p>Високоякісне оздоблення фасадів будь-якої складності. Використовуємо лише найкращі матеріали.</p>
         </div>
-        <a href="#" class="btn">Дізнатись більше</a>
+        <a href="services.html" class="btn">Дізнатись більше</a>
     </section>
 
     <section id="projects" class="section projects">
@@ -123,20 +139,20 @@
             <img src="project2.jpg" alt="Проект 2">
             <p>Оздоблення офісного центру в Харкові.</p>
         </div>
-        <a href="#" class="btn">Дивитись усі проекти</a>
+        <a href="projects.html" class="btn">Дивитись усі проекти</a>
     </section>
 
     <section id="about" class="section about">
         <h2>Про Нас</h2>
         <p>Ми – лідери в сфері будівництва та оздоблення фасадів. Займаємось будівництвом з 2005 року та маємо понад 500 завершених проектів.</p>
-        <a href="#" class="btn">Дізнатись більше</a>
+        <a href="about.html" class="btn">Дізнатись більше</a>
     </section>
 
     <section id="contact" class="section contact">
         <h2>Контакти</h2>
         <p>Телефон: +38 098 123 45 67</p>
         <p>Email: info@facades.ua</p>
-        <a href="#" class="btn">Зв'язатись з нами</a>
+        <a href="contact.html" class="btn">Зв'язатись з нами</a>
     </section>
 
     <footer>
