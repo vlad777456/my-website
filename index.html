@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фасади Майбутнього - Будівельна Компанія</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services, .projects, .about, .contact {
+            background-color: #f4f4f4;
+            margin: 20px 0;
+        }
+
+        .services h2, .projects h2, .about h2, .contact h2 {
+            margin-bottom: 30px;
+            color: #007BFF;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .service-item, .project-item {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .service-item img, .project-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Фасади Майбутнього</h1>
+        <p>Надійна якість та інноваційні рішення для вашого будинку</p>
+    </header>
+    
+    <nav>
+        <a href="#services">Послуги</a>
+        <a href="#projects">Проекти</a>
+        <a href="#about">Про нас</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+    
+    <section id="services" class="section services">
+        <h2>Наші Послуги</h2>
+        <div class="service-item">
+            <img src="facade.jpg" alt="Фасадні роботи">
+            <p>Високоякісне оздоблення фасадів будь-якої складності. Використовуємо лише найкращі матеріали.</p>
+        </div>
+        <a href="#" class="btn">Дізнатись більше</a>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Наші Проекти</h2>
+        <div class="project-item">
+            <img src="project1.jpg" alt="Проект 1">
+            <p>Модернізація фасаду багатоквартирного будинку у Києві.</p>
+        </div>
+        <div class="project-item">
+            <img src="project2.jpg" alt="Проект 2">
+            <p>Оздоблення офісного центру в Харкові.</p>
+        </div>
+        <a href="#" class="btn">Дивитись усі проекти</a>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>Про Нас</h2>
+        <p>Ми – лідери в сфері будівництва та оздоблення фасадів. Займаємось будівництвом з 2005 року та маємо понад 500 завершених проектів.</p>
+        <a href="#" class="btn">Дізнатись більше</a>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Контакти</h2>
+        <p>Телефон: +38 098 123 45 67</p>
+        <p>Email: info@facades.ua</p>
+        <a href="#" class="btn">Зв'язатись з нами</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Фасади Майбутнього. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
