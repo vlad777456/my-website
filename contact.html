@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Фасади Майбутнього</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('background.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+
+        header, footer, nav, .section {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        header, footer, nav {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        header h1, nav a, footer p {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .contact form {
+            margin-top: 20px;
+        }
+
+        .contact label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="services.html">Послуги</a>
+        <a href="projects.html">Проекти</a>
+        <a href="about.html">Про нас</a>
+    </nav>
+    
+    <section class="section contact">
+        <p>Зв'яжіться з нами за телефоном або електронною поштою:</p>
+        <p><strong>Телефон:</strong> +38 098 123 45 67</p>
+        <p><strong>Email:</strong> info@facades.ua</p>
+        
+        <h2>Форма зворотного зв'язку</h2>
+        <form>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Відправити</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Фасади Майбутнього. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
